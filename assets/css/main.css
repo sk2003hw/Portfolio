@@ -1992,6 +1992,10 @@ input, select, textarea {
 				.tiles article.style9 > .image:before {
 					background-color: #00bf63;
 				}
+
+				.tiles article.style10 > .image:before {
+					background-color: #000000;
+				}
 	
 				body:not(.is-touch) .tiles article:hover > .image {
 					-moz-transform: scale(1.1);
@@ -2700,6 +2704,13 @@ input, select, textarea {
 			#main > section.cap {
 				background-color: #00bf63;
 				background-image: url("../../images/9-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.netflix {
+				background-color: #ffffff;
+				background-image: url("../../images/netflix-big.jpg");
 				background-size: contain;     
 				background-repeat: no-repeat;
 			}
