@@ -65,14 +65,11 @@
 				<section id="about" class="two">
 					<div class="container">
 						<p style="text-align: left; font-size: 18px;">
-							Netflix has completely transformed the entertainment sector by offering a wide selection of films and TV shows. By evaluating this data, content producers, marketers, and decision-makers can discover significant insights.
-							Data related to the content on this platform has been obtained from <a href="https://www.kaggle.com/datasets/shivamb/netflix-shows">Kaggle</a> and is analysed in this project.
-						<br><br>
-
-						Neither the ratings or reviews given by the users nor the popularity of the shows have been mentioned so it is difficult to comment on the ideal steps for teams behind the movies or shows to make.   
-
-						Therefore, each of the possible factors have been assessed with those uncertainities in mind and assuming that Netflix has acquired streaming rights based on how successful that title might be, releases accordingly, and continues to update its strategy based on previous acquisitions.
-						<!-- <br><br> -->
+							An interactive sales data dashboard visually presents key performance metrics and trends, enabling real-time monitoring and analysis. Forecasting integrates historical sales data and statistical models to predict future sales trends, aiding strategic decision-making and resource planning.
+							The dataset contains details of the orders made by each customer in several parts of the US including the product details, order, payment, and shipment details, and the sales and profit earned.
+							The data has been cleaned and used to create the corresponding report (and dashboard) with interactive region-wise filters that could be used to dynamically view filtered content.
+							In a real world environment, the number of orders made, and the sales and profit are specifically displayed and automatically updated apart from the visualizations that display the relationships between the variables.
+														<!-- <br><br> -->
 						</p>
 					</div>
 				</section>
@@ -86,34 +83,34 @@
 					</div>
 				</section>
 
+				<section id="about" class="two">
+					<div class="container">
+						<p style="text-align: left; font-size: 18px;">
+							The inferences from the visualizations are as follows. Majority of the orders have been payed using COD or the Cash on Delivery method which can be attributed to the customers apprhensions with online payments while nearly the same percentage choose online banking while the rest chose credit/debit cards. 
+							<br><br>The most sold category of products were office supplies (~41.11%) followed by technology-associated and furniture. Concentrating on office supplied, their quality, and production can be beneficial.
+							Phones, chairs, and binders ranked highest in sales, with differences ranging from 7,000 to 15,000. On the other hand, office supplies such as labels, envelopes, and fasteners recorded the lowest sales, differing by almost 2,000.
+							In terms of profit, technology led with 90,000, followed by office supplies at 75,000, and furniture trailed with a significantly lower figure of 10,000.
+							<br><br>While the majority of orders originated from the eastern region of the US, it's noteworthy that California recorded the highest volume of statewide orders.
+							<br><br>Orders for 2019 and 2020 are presented, revealing a fluctuating pattern in 2019 with sales reaching their lowest point in August and peaking in December. The latter half of the year witnessed significantly higher sales. In 2020, the highest sales occurred in March, contrasting with the lowest point in April. The first third experienced notable fluctuations, while the subsequent months showed more moderate and consistent increases.
+							<br><br>The majority of customers favored standard (potentially free) shipping, with a preference over second class, first class, and same-day deliveries by more than threefold. Notably, the highest number of returns (157) were associated with standard deliveries, while second and first-class deliveries experienced just over a third of this return rate, respectively. Surprisingly, online payments recorded the highest number of returns, while those made with cash on delivery (COD) showed only marginal differences. Approximately half of this figure was linked to credit/debit card payments.
+							<br><br> Among consumers, out of the total sales of 0.75 million, the profit was 0.08 million. The corporate sector follows with sales of 0.51 million and a profit of 0.06 million. The home office sector contributes 0.30 million in sales, yielding a profit of 0.04 million. The company should focus on optimizing strategies to enhance profitability in each sector, considering the varying contribution levels and profit margins.
+							
+						</p>
+					</div>
+				</section>
+
 				<section id="about" class="'four">
 					<div class="container">
 						<p style="text-align: left; font-size: 18px;">
-							The dashboard has been created with some of the useful visualizations among all the tabs (worksheets or single visualizations).
-							It has been modified slightly for better readability on this website but it is compatible with Desktop only. Please refer to the above links to view the dashboard or the GitHub link to view its image. Some visualizations's outcome have aleady been discussed in the Jupyter notebook.
-							Firstly, the type of titles can be selected from the dropdown menu after which a 
-							title from the set of associated titles can be selected from the dropdown menu for the shows.
-							The genre, a short description, notable cast, and the length of the title is displayed for the selected title.
+							Sales amount forecast/prediction for 20 days since the last order data has been performed by Power BI using the exponential smoothing method. Exponential Smoothing is a time series forecasting method that assigns exponentially decreasing weights to past observations.
+							Additionally, a 95% confidence interval for the sales has been provided. The trend exhibited fluctuations both overall and in the predictions. After the period occurs, a comparison of the actual values with the predicted ones, will allow to judge its accuracy.
 							<br><br>
-							As suggested in the Jupyter notebook, USA has the most number of titles followed by almost a third of that number in India and then the UK at almost 200 lesser titles.
-							More than two thirds of the tiles have been observed to be movies while the rest were TV Shows however, in total, there were 4265 movies and 1969 TV shows which is lesser than half the previous value.
+							Firstly, there's a need to build trust in online payment methods, and offer incentives for using those, or offer other convenient payment methods, considering the significant preference for Cash on Delivery (COD). 
+							Since, office supplies is the top-selling category, marketing startegies should be implemented to further boost sales while attempts can be made for the lowest-selling ones or taken off the shelves if no improvements are observed.
 							<br><br>
-							TV-MA is the most common rating for movies and TV shows (almost half of that of movies) which means that shows that are meant for mature audience or adults only (17+ ages) are present the most on Netflix. This gives us an idea of the target audience of Netflix and the age group that Netflix' users are comprised of. TV-14 recommended for 14+ ages comes a close second. Rated titles that are least preferred are NC-17 which is slightly similar to TV-MA but narrower in range.
-							<br><br>
-							The highest number of addition of titles on Netflix has been in 2019 according to the given dataset with 1546 movies and 803 TV shows.
-							In case of release years of these titles, the top year for movies has been 2017 with 682 of those and for TV shows it has been 2019 with 400 of those.
-							The first movie and TV show were added in 2008 and this dataset has only one record of that year for each title types. The oldest TV show is from 1925 and the oldest movie is from 1954.
-							<br><br>
-							Finally, without filtering any data here in Tableau, documentaries make up most of Netflix followed by standup comedies and a combination of drams and independent movies. This is slighly varying compared to the code on the Jupyter notebook due to deletion of some records after data processing.
-							<br> <br>
-							The corresponding visualizations and analysis is present in the Jupyter notebook linked in the beginning. According to the data given and the visualizations made in this Python notebook, 1hr 30min movies that have an international background and a that of action and comedy are prominent on Netflix. Releasing content in the US, India, and the UK that too in off-peak times of June, February, or April among others could be kept in mind.  
-
-						All of the above factors should be kept in mind when negotiating a price with Netflix to gain the most profit. Success of the cast and directors could also be examined to quote a fair price however, not enough data has been given to infer this so it has been avoided in this project.
-						
-
-
-
-
+							Geographically, tailoring strategies to the eastern US, where most orders originate, and capitalizing on California's high statewide orders can maximize market penetration.
+							Seasonal (Christmas/Black Friday sales that occur in the later half of the year, or those in the summer), inventory management efficient returns management for standard deliveries are additional areas for strategic consideration.
+							Overall, increased sales, client satisfaction, and overall profitability can result from aligning these techniques with consumer preferences and market trends.
 						</p>
 					</div>
 				</section>
