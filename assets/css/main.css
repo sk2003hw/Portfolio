@@ -1996,6 +1996,10 @@ input, select, textarea {
 				.tiles article.style10 > .image:before {
 					background-color: #000000;
 				}
+
+				.tiles article.style11 > .image:before {
+					background-color: #3853a1;
+				}
 	
 				body:not(.is-touch) .tiles article:hover > .image {
 					-moz-transform: scale(1.1);
@@ -2711,6 +2715,20 @@ input, select, textarea {
 			#main > section.netflix {
 				background-color: #ffffff;
 				background-image: url("../../images/10-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.sales {
+				background-color: #1c2a86;
+				background-image: url("../../images/sales-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.dash {
+				background-color: #f5fafa;
+				background-image: url("../../images/sales-dash.png");
 				background-size: contain;     
 				background-repeat: no-repeat;
 			}
