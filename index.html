@@ -16,7 +16,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/profile__3_-removebg-preview.png" alt="" /></span>
+							<span class="image avatar48"><img src="images/2-removebg-preview.png" alt="" /></span>
 							<br>
 							<h1 id="title">Shreya Kala</h1>
 							<p>Graduate Student</p>
@@ -56,7 +56,7 @@
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
 						<div class="container">
-							<br><br><br><br><br>
+							<br><br>
 							<!-- <header>
 								<br><br><br>
 								<h4> <strong>Student at University | Aspiring Data Scientist</strong></h3>
@@ -94,194 +94,155 @@
 						</div>
 					</section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+					    <!-- Portfolio -->
+    <section id="portfolio" class="two">
+        <div class="container">
+            <header>
+                <h2>Projects</h2><br>
+                <h4>For more projects, please check my GitHub profile, and for password-protected files please contact for the password. This measure was taken to avoid public disclosure of the University's assignments.</h4>
+            </header>
+            
+            <!-- Filter Buttons -->
+            <div id="filter-buttons">
+                <button style="font-family: 'Titillium Web';" onclick="filterProjects('all')">All</button>
+				<button style="font-family: 'Titillium Web';" onclick="filterProjects('daml')">Data Analysis and ML</button>
+                <button style="font-family: 'Titillium Web';" onclick="filterProjects('Python')">Python</button>
+				<button style="font-family: 'Titillium Web';" onclick="filterProjects('Power BI')">Power BI</button>
+                <button style="font-family: 'Titillium Web';" onclick="filterProjects('Tableau')">Tableau</button>
+                <button style="font-family: 'Titillium Web';" onclick="filterProjects('Deep Learning')">Deep Learning</button>
+                <!-- <button onclick="filterProjects('R')">R</button> -->
+                <!-- <button onclick="filterProjects('Algorithms')">Algorithms</button> -->
+                <!-- <button onclick="filterProjects('Java')">Java</button> -->
+                <!-- <button onclick="filterProjects('AI')">AI</button> -->
+                <!-- <button onclick="filterProjects('Business')">Business</button> -->
+            </div>
+            <br>
+            <section class="tiles">
+                <article class="style10" data-tags="Power BI">
+                    <span class="image">
+                        <img src="images/sales.png" alt="" />
+                    </span>
+                    <a href="sales.html">
+                        <h3>Sales Dashboard</h3>
+                        <div class="content">
+                            <p>Power BI dashboard for a supermarket's sales data.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style11" data-tags="Python, Tableau">
+                    <span class="image">
+                        <img src="images/netfl.png" alt="" />
+                    </span>
+                    <a href="netflix.html">
+                        <h3>Netflix EDA and Visualizations</h3>
+                        <div class="content">
+                            <p>Analysis of titles on Netflix and a corresponding Tableau Dashboard.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style1" data-tags="Deep Learning, Python">
+                    <span class="image">
+                        <img src="images/hist.png" alt="" />
+                    </span>
+                    <a href="hist.html">
+                        <h3>Hist-TrOCR</h3>
+                        <div class="content">
+                            <p>Fine-tuned TrOCR model to recognize historical text from images</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style2" data-tags="Python, daml">
+                    <span class="image">
+                        <img src="images/churn.png" alt="" />
+                    </span>
+                    <a href="churn.html">
+                        <h3>Customer Churn Prediction</h3>
+                        <div class="content">
+                            <p>Decision Tree and Linear Regression in Python on generated data</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style3" data-tags="all">
+                    <span class="image">
+                        <img src="images/stat.png" alt="" />
+                    </span>
+                    <a href="stat.html">
+                        <h3>Statistical Analysis in R</h3>
+                        <div class="content">
+                            <p>Analysis of data of Pareto Distribution</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style4" data-tags="Python, daml">
+                    <span class="image">
+                        <img src="images/5.png" alt="" />
+                    </span>
+                    <a href="opt.html">
+                        <h3>Optimization Algorithms from Scratch</h3>
+                        <div class="content">
+                            <p>Genetic Algorithm and Particle Swarm Optimization in Python</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style5" data-tags="Python, Deep Learning">
+                    <span class="image">
+                        <img src="images/6.png" alt="" />
+                    </span>
+                    <a href="ann.html">
+                        <h3>Artificial Neural Network from Scratch</h3>
+                        <div class="content">
+                            <p>ANN in Python without any libraries</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style6" data-tags="Python, daml">
+                    <span class="image">
+                        <img src="images/7.png" alt="" />
+                    </span>
+                    <a href="eda.html">
+                        <h3>Student Performance Data Analysis</h3>
+                        <div class="content">
+                            <p>Exploratory Data Analysis and Application of Machine Learning techniques</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style7" data-tags="all">
+                    <span class="image">
+                        <img src="images/8.1.png" alt="" />
+                    </span>
+                    <a href="mazij.html">
+                        <h3>Collaborative Social Media App</h3>
+                        <div class="content">
+                            <p>Social Media Website with Chat and Whiteboard functionalities</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style8" data-tags="all">
+                    <span class="image">
+                        <img src="images/9.png" alt="" />
+                    </span>
+                    <a href="ttt.html">
+                        <h3>TicTacToe</h3>
+                        <div class="content">
+                            <p>AI-based Value Iteration, Policy Iteration, and Q-Learning agents that plan/learn to play a 3x3 Tic-Tac-Toe game</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style9"  data-tags="all">
+                    <span class="image">
+                        <img src="images/10.png" alt="" />
+                    </span>
+                    <a href="cap.html">
+                        <h3>Business Analysis Capstone</h3>
+                        <div class="content">
+                            <p>Business Strategy Recommendations and Analysis</p>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
 
-							<header>
-								<h2>Projects</h2><br>
-								<h4>For more projects, please check my GitHub profile, and for password-protected files please contact for the password. This measure was taken to avoid public disclosure of the University's assignments.</h4>
-							</header>
-							<section class="tiles">
-								<article class="style10">
-									<span class="image">
-										<img src="images/sales.png" alt="" />
-									</span>
-									<a href="sales.html">
-										<h3>Sales Dashboard</h3>
-										<div class="content">
-											<p>Power BI dashboard for a supermarket's sales data.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style11">
-									<span class="image">
-										<img src="images/netfl.png" alt="" />
-									</span>
-									<a href="netflix.html">
-										<h3>Netflix EDA and Visualizations</h3>
-										<div class="content">
-											<p>Analysis of titles on Netflix and a corresponding Tableau Dashboard.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/hist.png" alt="" />
-									</span>
-									<a href="hist.html">
-										<h3>Hist-TrOCR</h3>
-										<div class="content">
-											<p>Fine-tuned TrOCR model to recognize historical text from images</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/churn.png" alt="" />
-									</span>
-									<a href="churn.html">
-										<h3>Customer Churn Prediction</h3>
-										<div class="content">
-											<p>Decision Tree and Linear Regression in Python on generated data</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/stat.png" alt="" />
-									</span>
-									<a href="stat.html">
-										<h3>Statistical Analysis in R</h3>
-										<div class="content">
-											<p>Analysis of data of Pareto Distribution</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/5.png" alt="" />
-									</span>
-									<a href="opt.html">
-										<h3>Optimization Algorithms from Scratch</h3>
-										<div class="content">
-											<p>Genetic Algorithm and Particle Swarm Optimization in Python</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/6.png" alt="" />
-									</span>
-									<a href="ann.html">
-										<h3>Artificial Neural Network from Scratch</h3>
-										<div class="content">
-											<p>ANN in Python without any libraries</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/7.png" alt="" />
-									</span>
-									<a href="eda.html">
-										<h3>Student Performance Data Analysis</h3>
-										<div class="content">
-											<p>Exploratory Data Analysis and Application of Machine Learning techniques</p>
-										</div>
-									</a>
-								</article>
-								<article class="style7">
-									<span class="image">
-										<img src="images/8.1.png" alt="" />
-									</span>
-									<a href="mazij.html">
-										<h3>Collaborative Social Media App</h3>
-										<div class="content">
-											<p>Social Media Website with Chat and Whiteboard functionalities</p>
-										</div>
-									</a>
-								</article>
-								<article class="style8">
-									<span class="image">
-										<img src="images/9.png" alt="" />
-									</span>
-									<a href="ttt.html">
-										<h3>TicTacToe</h3>
-										<div class="content">
-											<p>AI-based Value Iteration, Policy Iteration, and Q-Learning agents that plan/learn to play a 3x3 Tic-Tac-Toe game</p>
-										</div>
-									</a>
-								</article>
-								<article class="style9">
-									<span class="image">
-										<img src="images/10.png" alt="" />
-									</span>
-									<a href="cap.html">
-										<h3>Business Analysis Capstone</h3>
-										<div class="content">
-											<p>Business Strategy Recommendations and Analysis</p>
-										</div>
-									</a>
-								</article>
-							</section>
-
-							<!-- <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p> -->
-
-
-							<!-- <div class="row">
-								<div class="col-4 col-12-mobile">
-									
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>-->
-						
-						</div> 
-					
-					</section>
 
 				<!-- About Me -->
 					<section id="edu" class="three">
@@ -291,7 +252,7 @@
 								<h2>Education</h2>
 							</header>
 
-							<p style="margin-bottom:0; color:rgb(177, 58, 177); font-weight: 700;"><span class="image left"><img src="images/download-removebg-preview (3).png" alt="" /></span>University of Alberta<br>
+							<p style="margin-bottom:0; color:#4267b2; font-weight: 700;"><span class="image left"><img src="images/download-removebg-preview (3).png" alt="" /></span>University of Alberta<br>
 								Masters in Modelling, Data, and Predictions </p>
 								<p style="margin : 0; padding-top:0; font-size:16px;font-weight: 100;text-align:end;">
 								<!-- •	Received direct entry to Year 2 with a scholarship. Completed Year 2 with a final grade of 87.75% and Year 3 with 89.5%. All courses have been completed with an A grade each. <br> -->
@@ -311,7 +272,7 @@
 							
 
 							<p></p>
-							<p style="margin-bottom:0; color:rgb(177, 58, 177); font-weight: 700;"><span class="image right"><img src="images/hwu-removebg-preview.png" alt="" /></span>Heriot-Watt University <br>
+							<p style="margin-bottom:0; color:#4267b2; font-weight: 700;"><span class="image right"><img src="images/hwu-removebg-preview.png" alt="" /></span>Heriot-Watt University <br>
 							Bachelor of Science (BSc Honors) in Computer Science, 2020-2023</p>
 							<p style="margin : 0; padding-top:0; font-size:16px;font-weight: 100;text-align: left;">
 							• Graduated with <strong> First-Class Honors </strong> and completed all courses with an A grade. <br>
@@ -348,7 +309,7 @@
 
 							<p></p>
 							
-							<p style="margin-bottom:0; color:rgb(177, 58, 177); font-weight: 700;"><span class="image left"><img src="images/uos-removebg-preview.png" alt="" /></span>University of Surrey <br>
+							<p style="margin-bottom:0; color:#4267b2; font-weight: 700;"><span class="image left"><img src="images/uos-removebg-preview.png" alt="" /></span>University of Surrey <br>
 								Bachelor of Science (BS) in Computer Science, 2019-2020</p>
 								<p style="margin : 0; padding-top:0; font-size:16px;font-weight: 100;text-align:end;">
 								<!-- •	Completed the first semester of Year 1 with an aggregate of 70.75%.<br> -->
@@ -375,15 +336,15 @@
 								<h2>Certifications</h2>
 							</header>
 							<ul class="alt">
-								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GYPG9TJRVBPD">Natural Language Processing Specialization</a> <em style="color: rgb(177, 58, 177)"> by DeepLearning.AI</em><br>
+								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GYPG9TJRVBPD">Natural Language Processing Specialization</a> <em style="color:#4267b2"> by DeepLearning.AI</em><br>
 									</li>
-								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ETEBDLDV8AEH">Deep Learning Specialization</a> <em style="color: rgb(177, 58, 177)"> by DeepLearning.AI</em>
+								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ETEBDLDV8AEH">Deep Learning Specialization</a> <em style="color:#4267b2"> by DeepLearning.AI</em>
 									</li>
-								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ASTGVDCX4W33">Business Analytics Specialization</a> <em style="color: rgb(177, 58, 177)"> by The University of Pennsylvania</em>
+								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ASTGVDCX4W33">Business Analytics Specialization</a> <em style="color:#4267b2"> by The University of Pennsylvania</em>
 									</li>
-								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BLG2UKCCFR6Y">Data Analytics Specialization</a> <em style="color: rgb(177, 58, 177)"> by Google</em>
+								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BLG2UKCCFR6Y">Data Analytics Specialization</a> <em style="color:#4267b2"> by Google</em>
 									</li>
-								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QD5RRF4JJJ5D">Applied AI Specialization </a> <em style="color: rgb(177, 58, 177)"> by IBM</em>
+								<li> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QD5RRF4JJJ5D">Applied AI Specialization </a> <em style="color:#4267b2"> by IBM</em>
 									</li>
 							</ul> 
 						</div>
@@ -401,12 +362,9 @@
 						<div class="container">
 
 							<header>
-								<h2>Reach Me At...</h2>
+								<h2>Reach Me At</h2>
 							</header>
-							<!-- <p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p> -->
+							
 							<section class="split">
 								<row>
 								<section>
@@ -482,6 +440,20 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+			<!-- Scripts -->
+<script>
+	function filterProjects(tag) {
+		const articles = document.querySelectorAll('section.tiles article');
+		articles.forEach(article => {
+			const tags = article.getAttribute('data-tags');
+			if (tag === 'all' || tags.includes(tag)) {
+				article.style.display = 'block';
+			} else {
+				article.style.display = 'none';
+			}
+		});
+	}
+	</script>
 
 	</body>
 </html>
