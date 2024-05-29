@@ -2003,6 +2003,22 @@ input, select, textarea {
 				.tiles article.style11 > .image:before {
 					background-color: #3853a1;
 				}
+
+				.tiles article.style15 > .image:before {
+					background-color: #000000;
+				}
+
+				.tiles article.style16 > .image:before {
+					background-color: #f41f50;
+				}
+
+				.tiles article.style17 > .image:before {
+					background-color: #0a837f;
+				}
+
+				.tiles article.style18 > .image:before {
+					background-color: #000000;
+				}
 	
 				body:not(.is-touch) .tiles article:hover > .image {
 					-moz-transform: scale(1.1);
@@ -2732,6 +2748,34 @@ input, select, textarea {
 			#main > section.dash {
 				background-color: #f5fafa;
 				background-image: url("../../images/sales-dash.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.clus {
+				background-color: #f1bc80;
+				background-image: url("../../images/13-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.surv {
+				background-color: #f41f50;
+				background-image: url("../../images/14-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.clsreg {
+				background-color: #0a837f;
+				background-image: url("../../images/15-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.air {
+				background-color: #fdee27;
+				background-image: url("../../images/16-h.png");
 				background-size: contain;     
 				background-repeat: no-repeat;
 			}
