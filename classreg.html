@@ -15,7 +15,7 @@
 
   gtag('config', 'G-VNTBXYWL3H');
 </script>
-		<title>Shreya's Portfolio: Artificial Neural Network</title>
+		<title>Shreya's Portfolio: Classification v/s Regression</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -65,13 +65,42 @@
 				<section id="about" class="three">
 					<div class="container">
 						<strong>Language:</strong> Python <br> <strong> Code </strong> at
-						<a href="https://github.com/sk2003hw/Artificial-Neural-Network-from-Scratch" class="icon brands fa-github"><span class="label">Github</span></a>
+						<a href="https://github.com/sk2003hw/Comparison-of-Regression-and-Classification-Techniques" class="icon brands fa-github"><span class="label">Github</span></a>
 					</div>	
 				</section>
 
 				<section id="about" class="two">
 					<div class="container">
 						<p style="text-align: left; font-size: 18px;">
+							In this data-driven world, it is vital to learn how to utilize the massive amounts of data available for extracting meaningful insights which could be done using powerful machine learning methods that are based on the abstract idea of artificial intelligence. Artificial Intelligence is the mimicking of human intelligence by machines with the use of potent algorithms. 
+Within this domain, Machine Learning (ML) is a subset, that focuses on machines' ability to make predictions without explicit programming by recognizing patterns from the data.
+The project aims to explore and compare regression and classification machine learning techniques on two distinct datasets used in each task.<br><br>
+
+<strong>Data</strong><br>
+For regression, the dataset- <a href="https://archive.ics.uci.edu/ml/datasets/online+news+popularity">Online News Popularity</a> contains a diverse set of features outlining articles published by Mashable over two years. The objective is to predict the number of shares (denoted by shares) these articles receive.
+For classification, a dataset containing consumer demographic attributes and coupon redemption rates was used. This dataset comprises categorical variables that reflect essential information for predicting whether customers would accept coupons. You can find this dataset on <a href="https://archive.ics.uci.edu/dataset/603/in+vehicle+coupon+recommendation">In-Vehicle Coupon Recommendation</a>.
+<br><br>
+
+<strong>Model Performance</strong><br>
+Logistic Regression and LDA: Both models showed an accuracy of around 61% on training and testing sets, but struggled with class imbalance, affecting their precision and recall.
+<br>K-Nearest Neighbors (KNN): Achieved 72% accuracy on the training set but dropped to 62% on the testing set, indicating overfitting despite balanced precision, recall, and F1-score.
+XGBoost: Emerged as the best-performing model, showcasing high accuracy and balanced performance across different metrics.
+<br>Other Models: Random Forest and SVM also performed well, while Decision Tree showed potential overfitting issues.
+<br><br><strong>AUC-ROC Analysis</strong><br>
+The AUC-ROC curve was used to evaluate the trade-off between sensitivity and specificity. XGBoost, Random Forest, and SVM demonstrated superior predictive power compared to Logistic Regression, LDA, and KNN.
+<br><br>
+<strong>Insights and Recommendations</strong><br>
+The analysis provided several actionable insights:<br>
+
+Age and Gender Targeting: Promotions targeting drivers aged 21-50 and tailoring offers for male and female drivers could increase coupon acceptance.<br>
+Travel Patterns: Solo diners, especially in the evening, are more likely to redeem coupons. Exclusive discounts for solo diners could boost redemption rates.<br>
+Weather Impact: Coupons distributed during sunny weather, particularly for restaurants and coffee houses, have higher acceptance rates. Scheduling coupon releases based on weather forecasts could be beneficial.
+<br>Income Levels: Employed individuals, with higher income levels, can be targeted with smaller discount coupons for better acceptance.<br><br>
+
+<strong>Conclusion</strong><br>
+The project highlighted the potential of XGBoost and SVM in predictive modeling for both regression and classification tasks. Despite some limitations, such as class imbalance and a lack of diverse features in the dataset, the study provided valuable insights into consumer behavior and predictive analytics.
+<br>
+Future work could focus on incorporating additional features, such as purchase history and location, to improve model accuracy. Advanced techniques like ensemble learning and neural networks could further enhance predictive performance.
 						</p>	
 					</div>
 				</section>
