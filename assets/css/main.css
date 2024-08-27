@@ -2019,6 +2019,26 @@ input, select, textarea {
 				.tiles article.style18 > .image:before {
 					background-color: #000000;
 				}
+
+				.tiles article.style19 > .image:before {
+					background-color: #000000;
+				}
+
+				.tiles article.style20 > .image:before {
+					background-color: #000000;
+				}
+
+				.tiles article.style21 > .image:before {
+					background-color: #735e59;
+				}
+
+				.tiles article.style22 > .image:before {
+					background-color: #230893;
+				}
+
+				.tiles article.style23 > .image:before {
+					background-color: #000000;
+				}
 	
 				body:not(.is-touch) .tiles article:hover > .image {
 					-moz-transform: scale(1.1);
@@ -2420,6 +2440,7 @@ input, select, textarea {
 
 		.icon > .label {
 			display: none;
+
 		}
 
 		.icon.solid:before {
@@ -2776,6 +2797,37 @@ input, select, textarea {
 			#main > section.air {
 				background-color: #fdee27;
 				background-image: url("../../images/16-h.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+
+			#main > section.time {
+				background-color: #f4900c;
+				background-image: url("../../images/21.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+			#main > section.cola {
+				background-color: #230893;
+				background-image: url("../../images/colasales.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+			#main > section.interior {
+				background-color: #fac8d0;
+				background-image: url("../../images/interiorv.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+			#main > section.findash {
+				background-color: #735e59;
+				background-image: url("../../images/19.png");
+				background-size: contain;     
+				background-repeat: no-repeat;
+			}
+			#main > section.revanaldash {
+				background-color: #a0c8a2;
+				background-image: url("../../images/20.png");
 				background-size: contain;     
 				background-repeat: no-repeat;
 			}
