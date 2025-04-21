@@ -30,7 +30,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: '.'  # Change this if you use a build folder like ./dist
+          path: '.'
+
+      - name: Preload upload-artifact@v3
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy
+          path: README.md
+          retention-days: 1
 
       - name: Deploy to GitHub Pages
         id: deployment
