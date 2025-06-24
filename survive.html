@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNTBXYWL3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNTBXYWL3H');
+</script>
+		<title>Shreya's Portfolio: Survival Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#portfolio" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/sk2003hw/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kalashreya/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:shreya11kala@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+							<li><a href="mailto:shreyakala@ymail.com" class="icon brands fa-yahoo"><span class="label">Yahoo mail</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="top" class="surv cover">
+					<div class="container">
+						<br><br>
+						<header>
+						</header>
+						
+					</div>
+				</section>
+
+				<section id="about" class="three">
+					<div class="container">
+						<strong>Language:</strong> Python <br> <strong> Code </strong> at
+						<a href="https://github.com/sk2003hw/Survival-Analysis" class="icon brands fa-github"><span class="label">Github</span></a>
+					</div>	
+				</section>
+
+				<section id="about" class="two">
+					<div class="container">
+						<p style="text-align: left; font-size: 18px;">
+							Pediatric bone marrow transplantation is a crucial treatment for various hematologic disorders, encompassing both malignant and non-malignant conditions. This research aims to understand the variables influencing the success of unmanipulated allogeneic unrelated donor hematopoietic stem cell transplantation in pediatric patients. By evaluating a wide range of patient demographics, medical history, transplantation details, and recovery metrics, this study seeks to provide valuable insights into optimizing transplant procedures and enhancing patient care.
+							<br><br>
+							<strong>Introduction</strong><br>
+							Advancements in healthcare, particularly in pediatric medicine, have integrated machine learning (ML) into critical areas like prognostics and treatment planning. Pediatric bone marrow transplantation, a vital intervention for hematologic disorders, relies on numerous variables that make outcome prediction challenging. This study harnesses ML algorithms to identify and evaluate critical factors affecting the success of bone marrow transplants in children. The goal is to use these insights to improve prediction accuracy and optimize transplant procedures.
+							<br><br>
+							<strong>Data</strong><br>
+							The dataset for this study was retrieved from the UCI Machine Learning Repository. It comprises 187 instances and 36 features, providing an extensive understanding of pediatric healthcare in the context of bone marrow transplantation. The data includes patient and donor demographics, medical records, transplant procedure details, and outcomes, with features spanning Integer, Categorical, and Binary data types.
+							<br><br>
+							<strong>Methodology</strong><br>
+							<strong>Data Pre-processing and Analysis</strong><br>
+							Data pre-processing involved addressing missing values, outliers, and irrelevant information to enhance data quality. Key steps included:
+							<br><br>
+							Null Value Handling: Used Random Forest Regressor for numerical features and mode or Random Forest Classifier for categorical features with missing values.
+							<br><br>
+							Outlier Treatment: Applied transformations to mitigate the impact of extreme values, such as log, cube root, and square root transformations.
+							<br><br>
+							Feature Engineering: One-hot encoding for nominal features and ordinal encoding for ordinal features.
+							<br><br>
+							Feature Selection: Utilized correlation analysis, Variance Inflation Factor (VIF), and redundant feature removal to refine the dataset.
+							<br><br>
+							<strong>Modeling Techniques</strong><br>
+							Several classification models were employed to analyze the impact of explanatory variables on survival status:
+							<br><br>
+							Logistic Regression: Predicted binary variables using the logistic function, with feature selection done through backward elimination.
+							<br><br>
+							Decision Tree: Used to build a tree structure based on data labels, optimizing hyperparameters via Grid Search.
+							<br><br>
+							Support Vector Machine (SVM): Constructed a hyperplane to separate classes, using kernel methods for higher-dimensional mapping.
+							<br><br>
+							XGBoost: An ensemble method combining decision trees to enhance accuracy through gradient boosting.
+							<br><br>
+							<strong>Results and Inferences</strong><br>
+							The performance of the classification models was evaluated based on accuracy, precision, recall, and F1 score. The best models achieved the following metrics:
+							<br><br>
+							<table>
+								<tr>
+									<th>Model</th>
+									<th>Accuracy</th>
+									<th>Precision</th>
+									<th>Recall</th>
+									<th>F1 Score</th>
+								</tr>
+								<tr>
+									<td>Logistic Regression-1</td>
+									<td>0.79</td>
+									<td>0.74</td>
+									<td>0.89</td>
+									<td>0.81</td>
+								</tr>
+								<tr>
+									<td>Decision Tree-1</td>
+									<td>0.66</td>
+									<td>0.62</td>
+									<td>0.84</td>
+									<td>0.71</td>
+								</tr>
+								<tr>
+									<td>SVM-2</td>
+									<td>0.74</td>
+									<td>0.68</td>
+									<td>0.89</td>
+									<td>0.77</td>
+								</tr>
+								<tr>
+									<td>XGBoost-1</td>
+									<td>0.79</td>
+									<td>0.72</td>
+									<td>0.95</td>
+									<td>0.82</td>
+								</tr>
+							</table>
+							<br><br>
+							</p>
+							<p style="text-align: left; font-size: 18px;">
+							For the Logistic Regression, Decision tree, and XGBoost, all features were selected but for SVM - ’ABOmatch’, ’DonorCMV’, ’RecipientCMV’, ’Allele’, ’Recipientage’, ’extcGvHD’, ’CD34kgx10d6’, ’CD3dkgx10d8’, ’Rbodymass’, ’PLTrecovery’, ’Stemcellsource 1’, ’Relapse 1’, and ’aGvHDIIIIV’ features were selected. The outputs of the confusion matrix and Wald’s test for logistic regression are given in Table 2 and Figure 8. The logistic regression models didn’t show signs of overfitting, yet encountered convergence issues. However, the other models demonstrated slight overfitting, with XGBoost exhibiting a wider margin in comparison. The training accuracy of both XGBoost models was perfect. The XGBoost model achieved good accuracy, the satisfactory precision indicates that the predicted positive cases are true positives, the high recall suggests a lower likelihood of missing actual positives, and the balanced F1 score indicates false positives and negatives are minimal. The feature importance from the best XGBoost model are given in Figure 11 (for those of model-1 refer to Figure 12).
+							<br><br>
+							<strong>Impact of CD34 Cells</strong><br>
+							Our investigation also aimed to validate the hypothesis that an increased dosage of CD34+ cells per kilogram extends overall survival time while avoiding concurrent adverse events impacting patients’ quality of life. Rigorous analysis focused on specific features—Relapse, aGvHDIIIIV, and extcGvHD—each representing their absence. The primary objective was to construct a predictive model for Survival time, emphasizing the augmentation of CD34+ cell dosage. Our findings unveiled a noteworthy trend in the relationship between CD34+ cells and disease types. Notably, a significant linear correlation was evident between CD34+ cell dosage and Non-Malignant disease cases (Figure 24). However, in Malignant disease cases, the relationship exhibited less linearity (Figure 25). Specifically, a higher dose of infused CD34+ cells demonstrated an association with improved outcomes in the low-risk disease subgroup. This analysis is in line with the research conducted in this paper.
+							<br><br>
+							To evaluate the model’s performance excluding undesirable events, such as the recipient developing acute or chronic graft versus host disease, a subset of test values meeting this criterion was isolated. Subsequently, a linear regression model was employed to establish the slope and intercept of the best-fit line for the data points. This analysis provided insights into the relationship between CD34+ cell dose and survival time, distinctly for malignant and non-malignant diseases.
+							<br><br>
+							<strong>Conclusion</strong><br>
+							In essence, our exploration into pediatric bone marrow transplantation uncovered pivotal factors influencing transplant success. The investigation scrutinized many variables and their profound impact on transplantation outcomes. Noteworthy among our findings was the discernible influence of CD34+ cell dosage on treatment efficacy, particularly in different disease subgroups. This highlighted the nuanced relationship between dosage escalation and improved outcomes, underscoring its potential in specific patient cohorts. Despite minor model convergence challenges, limited samples, and mild overfitting, our analysis yields valuable insights for predicting and optimizing bone marrow transplant outcomes in children. These insights promise to refine prognostic approaches, elevate patient care standards, and contribute to enhancing the well-being of pediatric patients undergoing hematologic treatments.
+					  
+						</p>	
+					</div>
+				</section>
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+
+		</body>
+					
+</html>

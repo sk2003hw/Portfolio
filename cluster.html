@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNTBXYWL3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNTBXYWL3H');
+</script>
+		<title>Shreya's Portfolio: Clustering Algorithms</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#portfolio" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/sk2003hw/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kalashreya/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:shreya11kala@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+							<li><a href="mailto:shreyakala@ymail.com" class="icon brands fa-yahoo"><span class="label">Yahoo mail</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="top" class="clus cover">
+					<div class="container">
+						<br><br>
+						<header>
+						</header>
+						
+					</div>
+				</section>
+
+				<section id="about" class="three">
+					<div class="container">
+						<strong>Language:</strong> Python <br> <strong> Code </strong> at
+						<a href="https://github.com/sk2003hw/Comparison-of-Clustering-Techniques/blob/main/MATH572_Clustering.ipynb" class="icon brands fa-github"><span class="label">Github</span></a>
+					</div>	
+				</section>
+
+				<section id="about" class="two">
+					<div class="container">
+						<p style="text-align: left; font-size: 18px;">
+							In this data-driven world, it is vital to learn how to utilize the huge amounts of
+							data available for extracting meaningful insights. Powerful Artificial
+							Intelligence-based techniques could be implemented to group data points with
+							other data points similar in characteristics and inherent structure to discover
+							trends and characteristics that could sow the seeds for further research and
+							analysis.<br><br>
+							Clustering is a machine learning technique that groups data into ’clusters’ where
+							points in a cluster have similar characteristics which differentiate them from
+							points in the other clusters. This project aims to run various clustering
+							algorithms on a (459,2207) dimensional dataset and compare the functioning of
+							the clustering techniques along with testing two types of dimensionality
+							reduction techniques.<br><br>
+							The clustering algorithms evaluated are k-means clustering, single-linkage
+							clustering, Gaussian mixture model with expectation-maximization,
+							density-based spatial clustering of applications with noise (DBSCAN), and
+							balance iterative reducing and clustering using hierarchies (BIRCH).
+							Dimensionality reduction techniques such as principal component analysis and
+							t-distributed stochastic neighbor embedding (t-SNE) were utilized and tested.
+							The evaluation involves comparing cluster assignments and visualizations. The
+							objective is to gain a comprehensive understanding of the advantages,
+							limitations, and working of the clustering and dimensionality reduction
+							algorithms, and their suitability for the given data.<br><br>
+
+							After the dimension reduction algorithms, Dimensions of the original
+							dataset:(459, 2207), dimensions of the PCA-reduced dataset: (459, 3),
+							dimensions of the t-SNE-reduced dataset: (459, 2). The clustering algorithms
+							implemented were tested for their performance on the full-dimensional dataset
+							and its two reduced versions. All algorithms were evaluated using the silhouette
+							score. <br><br>Silhouette score indicates the goodness of the clustering performed
+							and how suitable a data point is in a cluster rather than the others.
+							The distance of a data point from its neighbours in the same cluster (a) and the
+							distance to other clusters (b) are computed and averaged. Silhouette Score for a
+							data point = b-a / max(a,b) The values range from -1 to 1 where positive values
+							indicate the rightness of the cluster assignments while a score of 0 happens when
+							data points are equally close to two clusters. Higher scores demonstrate defined
+							and well-separated clusters based on which, the performance of the algorithms
+							can be compared across the datasets. 
+							The k-means clustering of all the pairs of observations in the full-dimensional
+							and reduced datasets was compared using Adjusted Random Score/Index. Its
+							values also range from -1 to 1 that is, from disagreement, no chance of
+							agreement, to perfectly identical. The outliers in each cluster were attempted to
+							be found to understand the quality of the clusters or possibly view the outliers
+							or noise in the dataset.<br><br>
+
+
+							The highest silhouette score corresponds to 3 clusters for both datasets and so is
+							the adjusted rand score. A silhouette score of 0.13 for a high-dimensional
+							dataset- the original dataset indicates poor cluster quality and separation while
+							a score of 0.35 for the PCA-reduced dataset suggests moderate cluster quality
+							and separation. As a result, k = 3 was selected for both cases for consistency
+							and the Silhouette score plot was selected for further optimal ’k’ value searches.
+							The clustering agreement was the best in the first case too, but resembles the
+							initial configuration’s output. <br><br>It resembles clusteval’s output too as the same
+							algorithm is implemented behind the hood with slightly different parameters.
+							For the first case, 3 outliers were found in 3 of the 4 clusters for the original
+							dataset. In the second case, kmeans++ was found ideal for both the datasets
+							but, for the original dataset maximum of 300 iterations were found, 1 cluster
+							contained 2 outliers and another had 1 outlier. For the third case, out of the 2
+							clusters, one was marked to have 3 outliers. For the reduced dataset, only one
+							observation was marked as an outlier in all three cases. Overall, observations 95,
+							97, and 369 were marked outliers in all cases with at least one of the dataset
+							variants and in the initial and ideal cases. However, with t-SNE in the ideal case
+							with 4 clusters, no outliers were observed.<br><br>
+							The adjusted rand score for the ideal case between the original and clusters of
+							the PCA-reduced dataset is 0.93 but it is 0.288 between the original and t-SNE
+							reduced dataset. This can also be observed from the previous section where the
+							percentage of matching clusters was better in the former case. The low ARS
+							between the original data and t-SNE-based clustering could indicate a loss of
+							information compared to PCA or more concentration on local instead of the
+							global structure than required.<br><br>
+							GMM is evaluated using BIC and Akaike information criterion (AIC)
+							along with silhouette score. AIC is similar to BIC but generally used for time
+							series or small datasets so it has not been stressed. BIC is preferred over AIC
+							for the true model selection. The log-likelihood of a GMM measures the fit of
+							the model to the data. Its value is said to be relative to datasets so cannot be
+							extended to other datasets or even their reduced versions. As a reason, the
+							values are calculated but not compared. The number of components and covariance type used is the same in all three
+							cases, however, the lowest AIC and BIC are preferred therefore, the
+							PCA-reduced data is clustered better abstractly as values cannot be directly
+							compared due to the dataset variations.<br><br>
+
+
+							For K-means, GMM, and BIRCH models, the best performance was with the
+							t-SNE reduced data. With single linkage clustering, the overall performance is
+							underwhelming but the best performance was observed with the original
+							full-dimensional dataset. Similarly, the best DBSCAN results were with the
+							original dataset. On the original dataset, DBSCAN performed the best, on the
+							PCA-reduced dataset, both DBSCAN and BIRCH had similar results, and on
+							the t-SNE-reduced dataset, k-means clustering performed the best.
+							Single-linkage clustering was the worst-performing algorithm averaged across the
+							three datasets.<br><br>
+							K-Means achieved the highest silhouette scores on the t-SNE reduced data, then
+							the PCA-reduced data, and lowest on the original Data. Single linkage had the
+							highest score on the original data followed by the PCA-reduced data and
+							t-SNE-reduced data. GMM displayed relatively lower scores and poor
+							performances across all datasets. DBSCAN’s performance decreased on the
+							reduced datasets while BIRCH had comparatively lower silhouette scores on all
+							three datasets. Overall, the highest silhouette score or clearest clustering on the
+							dataset was observed with DBSCAN on the full-dimensional dataset which could
+							be attributed to the fact that DBSCAN produces arbitrarily-shaped clusters
+							thus recognizing better clusters from this dataset.<br><br>
+							On average, the best performance of the algorithms was observed on the t-SNE
+							reduced dataset, and the worst on the high-dimensional original data showing
+							that a large number of features are indeed not preferred for clustering. Clusters
+							in the same parts of the t-SNE data tend to belong to the same clusters
+							compared to PCA as it is very random there but the former appears more put
+							together and systematic. Additionally, it’s preferable to consider the domain
+							knowledge to make a well-versed decision regarding the algorithms and their
+							results on the dataset and its reduced variants.<br><br>
+
+							<strong>Conclusion</strong><br>
+							The project has conducted a thorough review of clustering algorithms and the
+							effect of dimensionality reduction algorithms on these techniques. For unlabeled
+							data, unsupervised learning techniques have to be utilized so clustering
+							algorithms were implemented. In comparison, the DBSCAN technique seemed
+							to work best for the t-SNE-reduced dataset. Between PCA and t-SNE, the
+							dataset reduced by t-SNE had a better average score although the criteria
+							cannot be compared to each other. All algorithms have their pros and cons
+							which have been highlighted as intended and they are each suitable for different
+							types of datasets. The domain of machine learning is wider so there exist many
+							other clustering techniques that could be implemented. Clustering and
+							dimensionality reduction techniques are vital in the analysis and understanding
+							of complex datasets. By understanding how to effectively group and cluster
+							data, we can develop an effective understanding of the observations and features
+							and gain enough insights to make data-driven decisions in various domains.<br><br>
+
+		
+						</p>	
+					</div>
+				</section>
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+
+		</body>
+					
+</html>

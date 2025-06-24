@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNTBXYWL3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNTBXYWL3H');
+</script>
+		<title>Shreya's Portfolio: Artificial Neural Network</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#portfolio" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/sk2003hw/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kalashreya/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:shreya11kala@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+							<li><a href="mailto:shreyakala@ymail.com" class="icon brands fa-yahoo"><span class="label">Yahoo mail</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="top" class="ann cover">
+					<div class="container">
+						<br><br>
+						<header>
+						</header>
+						
+					</div>
+				</section>
+
+				<section id="about" class="three">
+					<div class="container">
+						<strong>Language:</strong> Python <br> <strong> Code </strong> at
+						<a href="https://github.com/sk2003hw/Artificial-Neural-Network-from-Scratch" class="icon brands fa-github"><span class="label">Github</span></a>
+					</div>	
+				</section>
+
+				<section id="about" class="two">
+					<div class="container">
+						<p style="text-align: left; font-size: 18px;">
+							The ANN was designed to fit the UCI Breast Cancer dataset. We followed the following
+							rationale while developing this model:<br>
+							• Implementing a feed-forward multilayer architecture with configurable neurons, layers,
+							activation functions, loss function, learning rate and schedule, and type of gradient
+							descent.<br>
+							• Testing different gradient descent algorithms, weights, biases, learning rates, and hidden
+							layers, to record the best performance and classification accuracy rates.<br>
+							• Ensuring the code is easy to debug and structure, with appropriate comments for users.
+							Methods<br>
+							The program was written using the Python coding language and developed on Jupyter notebook.
+							The Breast Cancer dataset is then explored and cleaned before splitting it into training and
+							testing subsets. Feature scaling is then performed to normalize the range of variables in the
+							dataset and to speed up the training. This included, normalizing the X training and testing sets
+							with min-max where the minimum value of a feature is made a 0 and the maximum value is
+							made a 1, and all other values become floats between 0 and 1.<br><br>
+							The hyperparameters are initialized and made configurable according to the coursework
+							specifications. Users can choose between sigmoid, ReLU, tanh and softmax activation functions,
+							batch, mini-batch and stochastic gradient descent algorithms, the learning rate, number of input
+							features/nodes and hidden neurons/nodes and layers, epochs, and loss functions. Different values
+							were tested to report the highest accuracy rates and recorded in this paper. The weights and
+							biases of all the layers in the network were randomly initialized and stored in one dictionary.<br><br>
+							Subsequently, for forward propagation, the linear activation value and the output of the layer is
+							calculated by using the activation function given for that layer. All the values are stored in lists
+							and are used during backward propagation to retrieve the values whenever required. Later, the
+							loss is calculated and averaged during mini-batch or stochastic gradient descent and the gradients
+							computed during the backward pass are used to update the weights and biases. This happens for
+							the set number of epochs/iterations.<br><br>
+							1e-5 was added to the output probability obtaining log (0) i.e., negative infinity that arises from
+							using the cross-entropy loss function, and to avoid division by zeroes when calculating the
+							gradient of the first activation value in the backward propagation. The decision threshold value
+							was set to 0.39 and was calculated by plotting the ROC Curve when running an MLP-Classifier
+							from scikitlearn with parameters used for our model and adjusted according to trial and error
+							with the hyperparameters. The learning rate decay used when enabled, is the Step Decay
+							schedule that drops the learning rate by half every 10 epochs.<br><br>
+							<strong>The Loss Function</strong><br>
+							Apart from the cross-entropy loss function, two other loss functions were selected for our model
+							that were suitable for binary classification. A literature review was done as follows -<br>
+							The Hinge Loss function was developed for training classifiers, primarily Support Vector
+							Machine (SVM), and is typically used in binary classification. According to Rennie and Srebro,
+							‘An important property of this loss function is that it is an upper bound on the zero-one
+							misclassification error’. Thus, it is used for "maximum-margin" classification.<br> Hinge loss has
+							reportedly performed better than cross-entropy loss in certain situations concerning binary
+							classification problems and can be used in the context of neural networks.<br> An extension of this
+							function is the Squared Hinge Loss, which is simply the square of the hinge loss score. Thus, we
+							found it appropriate to choose the following additional loss functions for our model.<br><br>
+							<strong>Results</strong><br>
+							The following inferences were made after testing different hyperparameters over our model:<br>
+							• Using all the input features gave the best accuracy.<br>
+							• The cross-entropy loss function has the highest convergence rate and accuracy values.<br>
+							• The hinge and squared hinge loss functions give increased accuracies, but the costs
+							remain stagnant at the values 0.8-0.04, therefore the convergence rate to 0 is reduced.<br>
+							• Increasing the number of epochs, while reducing the batch size and learning rate
+							increased accuracy.<br>
+							• Learning rates between 0.00095 and 0.01 perform well for all hyperparameters.<br>
+							• Stochastic gradient descent takes longer to converge, as compared to batch and minibatch gradient descents but usually records the highest accuracy with fewer epochs and a
+							lesser learning rate compared to mini-batch and batch algorithms.<br>
+							• Increasing the hidden layers led to reduced accuracy after increasing until 3 layers.
+							<br>• The stochastic and mini-batch gradient descents show the highest accuracies and lowest
+							costs, with accuracy values ranging from 90-95%. Batch gives similar accuracies with an
+							increased number of epochs.
+							<br>• The step learning decay schedule shows optimum results (increased accuracies and
+							reduced costs) with mini-batch gradient descent. It outperforms time-based or
+							exponential decays schedules.
+							<br>• The ReLU activation function works the best compared to tanh activation function for the
+							hidden layers of the model. A combination of ReLU activation functions on each hidden
+							layer with sigmoid as the output layer’s activation function should be configured for
+							getting the right probabilities.
+							<br>• The mean results across a series of 10 runs for the hyperparameters with a learning rate of
+							0.03 and no learning rate decay, 4 layers, each with 25, 21, 59 and 1 nodes, and activation
+							functions ReLU, ReLU, tanh, and sigmoid respectively, cross-entropy loss function,
+							batch gradient descent for 1000 epochs is 93%. The standard deviation is 0.0179. The
+							node numbers were chosen to be set at 2/3rd the size of the input layer + size of the output
+							layer as recommended (Krishnan, 2022).
+							<br>• The highest accuracies recorded with a lower number of nodes, a combination of 3
+							hidden layers each with nodes 8, 8, and 1, cross-entropy loss function, ReLU, tanh, and
+							sigmoid (output layer) activation functions, 1000 epochs, and a learning rate of 0.003
+							with no decay, and batch gradient descent is 95%. The loss converges to a rate of 0.06,
+							indicating a well-trained model.<br><br>
+
+							<strong>Discussion</strong><br>
+							Our dataset influenced our data preprocessing steps, such as MinMax normalization, lower
+							learning rates, threshold values, and hidden neuron numbers, and thus dictated the structure of
+							our MLP model. Due to the limited number of samples available, the model was at risk of
+							overfitting, so a simple ANN structure was optimal for implementation. The train-test set was
+							divided into 75% - 25% rows and was evaluated for performance. A literature review for suitable
+							loss functions was done, and hinge and squared hinge loss proved appropriate for binary
+							classification. The binary cross-entropy loss function gave the highest convergence rate and
+							accuracy values. For each hyperparameter value investigated, the training and testing process is
+							performed multiple times to record accurate inferences and to account for the inherent random
+							variation in training by averaging the results.<br><br>
+
+							Through thorough experimentation of the hyperparameters, we discovered the right balance of
+							values that worked well with our model. Graphs and figures were charted subsequently to reflect
+							these results. Further work that can be considered to fine-tune our model is utilizing softmax
+							activation function and two output nodes in the output layer for better performance. The softmax
+							activation functions and its derivative were implemented for this reason but fall short of
+							complete implementation.<br>
+							This project was highly informative and led to a well-rounded understanding of MLP Neural
+							Networks. Additional functionalities were implemented as we progressed in our understanding
+							and knowledge of this program. 
+						</p>
+					</div>
+				</section>
+
+				<section id="about" class="four">
+					<div class="container">
+						<header>
+								<h3>References</h3>
+							</header>
+				<li style="text-align: left; font-size: 16px;">2019. [online] Available at: https://machinelearningmastery.com/how-to-choose-loss-functions-whentraining-deep-learning-neural-networks/ [Accessed 18 October 2022].
+				</li><br><li style="text-align: left; font-size: 16px;">Amanchadha (2021) Amanchadha/Coursera-deep-learning-specialization: Notes, programming
+				assignments and quizzes from all courses within the Coursera Deep Learning Specialization offered by
+				deeplearning.ai: (i) neural networks and deep learning; (ii) improving Deep Neural Networks:
+				Hyperparameter tuning, regularization and optimization; (III) Structuring Machine Learning projects; (iv)
+				convolutional neural networks; (V) sequence models, GitHub. Available at:
+				https://github.com/amanchadha/coursera-deep-learning-specialization (Accessed: October 27, 2022).
+				</li><br><li style="text-align: left; font-size: 16px;">Krishnan, S. (2022) How do determine the number of layers and neurons in the hidden layer?, Medium.
+				Geek Culture. Available at: https://medium.com/geekculture/introduction-to-neural-network2f8b8221fbd3#:~:text=The%20number%20of%20hidden%20neurons%20should%20be%202%2F3%20t
+				he,size%20of%20the%20input%20layer (Accessed: October 27, 2022).
+				</li><br><li style="text-align: left; font-size: 16px;">Rennie, J.D. and Srebro, N., 2005, July. Loss functions for preference levels: Regression with discrete
+				ordered labels. In Proceedings of the IJCAI multidisciplinary workshop on advances in preference
+				handling (Vol. 1). AAAI Press, Menlo Park, CA
+				</li>
+				</div>
+				</section>
+			</div>
+
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+
+		</body>
+					
+</html>

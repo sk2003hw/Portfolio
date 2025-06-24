@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNTBXYWL3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNTBXYWL3H');
+</script>
+		<title>Shreya's Portfolio: Hist-TrOCR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#portfolio" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/sk2003hw/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kalashreya/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:shreya11kala@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+							<li><a href="mailto:shreyakala@ymail.com" class="icon brands fa-yahoo"><span class="label">Yahoo mail</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="top" class="hist cover">
+					<div class="container">
+						<br><br>
+						<header>
+						</header>
+						
+					</div>
+				</section>
+
+				<section id="about" class="three">
+					<div class="container">
+						<strong>Language:</strong> Python <br> <strong> Code </strong> at
+						<a href="https://github.com/sk2003hw/Hist-TrOCR" class="icon brands fa-github"><span class="label">Github</span></a>
+					</div>	
+				</section>
+
+				<section id="about" class="two">
+					<div class="container">
+					<p style="text-align: left; font-size: 18px;">
+						Historical Texts contain accounts of past events that provide insight into the ideologies, culture, and innovations that have shaped our world. This emphasizes the need to preserve and digitize them for the future. Simply taking photos is infeasible for a large volume of data and does not produce searchable text. Deep learning-based approaches such as Optical Character Recognition (OCR) produce searchable text quickly however, there is room for improvement as they are error-prone. A model solely based on pre-trained Transformers is seen as a viable alternative to the overused combination of Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN) models. 
+						<br><br>
+						The aim of this project is to implement deep learning-based text recognition which is trained (fine-tuned) to scan historical texts. The model makes use of the Transformer architecture (Transformer-based Optical Character Recognition (TrOCR) [1]) instead of the traditional CNNs and RNNs. The performance of the model has been evaluated and compared with other deep-learning models that have also been employed for scanning historical books. 
+						<br><br>
+						The TROCR model developed by researchers from Microsoft is an end-to-end Transformer-based text recognition model. Transformers are encoder-decoder models that harness self-attention and are alternatives to RNNs for sequence-to-sequence (e.g. text->text) problems. Words are encoded into numbers and then positional information is embedded. Multi-head attention produces a new sequence from the attention weights (contribution of each word in the input to the output) calculated for the Feed Forward network to generate the output feature vector which is used by the decoder to produce the text.
+						The decoder uses masking to ensure only previous text is looked at (auto-regressive) for token generation and selects the word with the highest probability score from the SoftMax function. TrOCR [1] is an end-to-end Transformer-based text recognition model. ViT [2] image processor and RoBERTa [3] tokenizer are used.
+						<br><br>
+						The model is imported from its HuggingFace page [6] and is trained using PyTorch on the Washington Database [5] with images from George Washington's papers and those from the ARDIS Dataset [4] that contain dates from Swedish Church records.  The data is cleaned and formatted to be used as a custom PyTorch Dataset and then a DataLoader; these are used to store and load the data efficiently, respectively.
+						<!-- <br> -->
+						Pixel values of the image are squeezed to a suitable dimension for the processor. The tokenizer pads the ground truth so that all sequences are of the same length for being used in the decoder. This data is split into a train (1981 samples), validation, and test sets (661 samples each) for the purposes as suggested by their names. The model is trained with ADAM optimizer with weight decay to penalize large weights and avoid overfitting (memorizing training data but underperforming with unseen data) and its performance is evaluated in each iteration/epoch.
+						<br><br>
+						<strong>Evaluation metrics: </strong>
+						Precision- the ratio of the number of accurately predicted words out of all the detected words<br>
+						Recall- the ratio of correct matches to the number of ground truths<br>
+						F1 score- the weighted average of precision and recall <br>
+						CER (Character Error Rate)- the percentage of incorrectly predicted characters<br>
+						<br> The results of testing the finetuned model are given below. It can be inferred that the model performs with ~88% of precision, recall, and F1 score, indicating that the model accurately predicted 88% of detected and ground truth words and that these metrics are well-balanced. Thus, the model performs well on the combination of the two datasets used.
+						<br></p>
+							<div style="text-align: center">
+								<figure>
+									<img src="images/hist graph.png" alt="TrOCR results graph" width="50%" height="50%"/>
+									<figcaption style="font-size: 16px; color: #666;">Comparing the performance of the original and finetuned TrOCR models; <br> unlike other metrics, lesser the CER value, better is the model</figcaption>
+								</figure>
+							</div>
+						<br>
+						<p style="text-align: left; font-size: 18px;">
+						Hurdles such as an incompatible dataset and insufficient VRAM on Goole Colab were managed to produce a model that is only compatible with words and one-line text, with a competitive CER of 0.06.  The Hist-TrOCR was made to fulfill the objectives of this project and meet its requirements. To make the model work with longer text lines, a text detection module that detects the text regions from the image and segments them could be integrated with the fine-tuned model.
+					</p>
+					</div>
+				</section>
+
+				<section id="about" class="four">
+					<div class="container">
+						<header>
+								<h3>References</h3>
+							</header>
+					<p style="text-align: left; font-size: 16px;">
+
+						[1] M. Li, T. Lv, J. Chen, et al., TrOCR: Transformer-based optical character recognition with pre-trained models, version: 5, Sep. 6, 2022. arXiv: 2109.10282[cs]. [Online]. Available: http://arxiv.org/abs/2109.10282.
+					<br>[2] A. Dosovitskiy, L. Beyer, A. Kolesnikov, et al., An image is worth 16x16 words: Transformers for image recognition at scale, Jun. 3, 2021. arXiv: 2010.11929[cs]. [Online]. Available: http://arxiv.org/abs/2010.11929.
+					<br> [3] Y. Liu, M. Ott, N. Goyal, et al., RoBERTa: A robustly optimized BERT pretraining
+					approach, Jul. 26, 2019. arXiv: 1907.11692[cs]. [Online]. Available: http://arxiv.org/abs/1907.11692.
+					<br>[4] H. Kusetogullari, A. Yavariabdi, A. Cheddad, H. Grahn, and J. Hall, “ARDIS: A Swedish historical handwritten digit dataset,” Neural Comput & Applic, vol. 32, no. 21, pp. 16 505–16 518, Nov. 1, 2020. [Online]. Available: https://doi.org/10.1007/s00521-019-04163-3
+					<br>[5] “Research group on computer vision and artificial intelligence — computer vision and artificial intelligence.” [Online]. Available: https://fki.tic.heia-fr.ch/databases/iam-historical-document-database
+					<br>[6] “TrOCR.” (), [Online]. Available: https://huggingface.co/transformers/v4.12.5/model_doc/model_doc/trocr.html 
+
+						</p>
+					</div>
+				</section>
+			</div>
+
+			
+
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+
+		</body>
+					
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNTBXYWL3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNTBXYWL3H');
+</script>
+
+		<title>Shreya's Portfolio: Airline Delay Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#portfolio" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/sk2003hw/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kalashreya/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:shreya11kala@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+							<li><a href="mailto:shreyakala@ymail.com" class="icon brands fa-yahoo"><span class="label">Yahoo mail</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="top" class="air cover">
+					<div class="container">
+						<br><br>
+						<header>
+						</header>
+						
+					</div>
+				</section>
+
+				<section id="about" class="three">
+					<div class="container">
+						<strong>Language:</strong> Python <br> <strong> Code and Report </strong> at
+						<a href="https://github.com/sk2003hw/Airline_Delay_and_Cancellation_Analysis" class="icon brands fa-github"><span class="label">Github</span></a>
+					</div>	
+				</section>
+
+				<section id="about" class="two">
+					<div class="container">
+						<p style="text-align: left; font-size: 18px;">
+							Flight delays are on a steady rise, presenting significant financial challenges and fostering
+dissatisfaction among airline companies’ customers. Addressing this pressing issue, the
+study employed supervised machine learning models to forecast flight delays. 
+<br><br>Four algorithms - Logistic Regression, K-Nearest Neighbor, Random Forest, and
+XGBoost were trained and tested to complete the binary classification of flight delays. The
+evaluation of algorithms was fulfilled by comparing the values of four measures: accuracy,
+precision, recall, and f1-score. 
+<br><br>These measures were weighted to adjust the imbalance of the
+selected data set. The comparative analysis showed that the XGBoost algorithm has the
+best performance with an accuracy of 63% and KNN has the worst performance with an F1
+Score of 58%. Tree-based ensemble classifiers generally have better performance than other
+base classifiers.
+<br><br>
+<a href="https://www.kaggle.com/datasets/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018?select=2015.csv" target="_blank">Kaggle</a> 
+        with 28 features and 5.81M instances describing diverse aspects of flight information crucial in determining the performance and reliability of air transportation.<br><br>
+        The dataset is sourced from Kaggle and encompasses a vast repository of airline delay and cancellation data, offering a comprehensive perspective on the operational challenges faced by the aviation industry from 2009 to 2018. For our study, we have specifically focused on data from the year 2015, providing insights into the performance and reliability of air transportation services during this period.
+        <br>The dataset consists of a total of 5,819,079 rows and 28 columns. This includes a broad spectrum covering temporal dynamics, operational details, geo-spatial information, and delay classifications. 
+		<br><br>The dataset comprises integer and categorical (including binary) data types, reflecting various essential information crucial for investigating airline delays. This extensive dataset presents abundant opportunities for thorough examination and analysis, facilitating a detailed exploration of airline delays and cancellations.
+   </p>
+		<div style="text-align: center">
+			<figure>
+				<img src="images/air-results.png" alt="results" width="75%" height="75%"/>
+				<figcaption style="font-size: 16px; color: #666;">Model Performance</figcaption>
+			</figure>
+		</div>
+		<p style="text-align: left; font-size: 18px;">
+		The XGBoost model demonstrates the most promising performance among the models tested with an accuracy of 68\%, and the highest AUROC and minimal overfitting as indicated by the learning curve analysis. This suggests that the XGBoost model is well-suited for predicting flight delays based on the features provided in the dataset, ensuring effective flight delay management for improved operational efficiency and passenger satisfaction.
+		<br><br>
+
+		<strong>Recommendations</strong><br>
+The dataset offers valuable insights useful for strategic planning within the airline industry
+for them to optimize route planning and resource allocation. This enhances operational
+efficiency and contributes to customer satisfaction which are vital in the airline industry.
+The model’s predictions help airlines manage their resources better. From staffing to
+maintenance and fuel, these forecasts allow airlines to make wise decisions, saving costs and
+boosting profits. By matching resources with the demand, airlines can run their operations
+smoothly and achieve better financial results.<br><br>
+We recommend the implementation of targeted strategies to address delays on routes prone to disruptions. By adjusting flight
+schedules and allocating resources strategically, airlines can mitigate the impact of delays.
+Also, investing in preventive maintenance programs to address underlying issues could be
+helpful. These measures help reduce delays and improve customer satisfaction.<br><br>
+
+<strong>Model Critique</strong><br>
+The project began with the aim of employing regression models to predict flight delays
+which was a continuous variable rather than being binary. However, as we delved deeper
+into the data and its analysis, we encountered several limitations and challenges that
+reformed our approach.<br><br>
+
+One significant problem was we noticed the inherent skewness or asymmetry in the
+distribution of departure delay data. This skewed distribution posed a challenge for our
+regression models, as they struggled to capture the variance of the data accurately because
+they require normally distributed or at least symmetric data. Figure 17 depicts the
+right-skewness or asymmetry observed with the continuous departure delay variable.<br><br>
+
+In addition to challenges related to data distribution, the lack of critical features such as
+detailed air traffic information and explicit causes of the delays such as weather or NAS
+delays also severely limited our models’ ability to make precise predictions. These essential
+features were initially included in the dataset but were later removed due to their high
+sparsity. With over 98% of the data containing null values, these features became redundant
+and were removed.<br><br>
+
+The results of the regression models were highly unsatisfactory indicating that only 3.5% of
+the variance in the data could be accounted by the predictions. Therefore, we transitioned
+towards classification models, which offered a better framework for addressing the data’s
+complexities. The departure delay was converted to a binary variable indicating delay for a
+positive departure delay value and not otherwise. Despite this, the challenges continued,
+emphasizing the need for better solutions to overcome them.<br><br>
+
+The scale of the dataset presented logistical challenges during the training process. Training
+our models on such a large dataset required substantial computational resources and time.
+Although Google Colab was used for training the model with its processor and RAM, the
+training time of the models did not vary. <br><br>
+
+Additionally, Google Colab’s RAM would reach
+full capacity when attempting to use more training data, so the dataset was reduced. 200000
+delayed and non-delayed flights each were sampled for training and testing the model
+further. Moreover, including hyperparameter tuning to optimize model performance added
+another layer of complexity, extending the training time even further. We tried to run a
+Support Vector Machine (SVM) model for fitting the data and classifying the flights as
+delayed or not. However, the training process did not finish despite spending more than 8
+hours, as the Colab environment used for execution would timeout.<br><br>
+
+Future work includes implementing strategies to mitigate these limitations and challenges
+effectively. Exploring alternative approaches, such as feature engineering to address data
+skewness and using domain knowledge to impute missing features, could enhance the
+model’s performance. Optimizing efficiency through parallel processing could also accelerate
+the training of the model.<br><br>
+
+<strong>Conclusion</strong><br>
+Airline delays are a prevalent issue in the aviation industry, with extensive consequences for
+both airlines and passengers. Aside from the inconvenience experienced by travellers, these
+delays incur huge financial losses for airlines, in the form of increased operational costs,
+decreased productivity, and compensations. Additionally, delays tarnish the reputation of
+airlines, decreasing customer loyalty and satisfaction.<br><br>
+Thus, using machine learning techniques for predicting airline delays has gained popularity.
+By using historical flight data, weather forecasts, airport congestion patterns, and other
+relevant details, machine learning models can predict delays to aid airline companies in
+managing their operations, optimizing flight schedules to minimize disruptions, and
+allocating resources strategically.<br><br>
+
+However, the models’ performance depends on the quality and comprehensibility of the
+data, so having access to flight schedules, aircraft performance metrics, weather data, air
+traffic information, and historical delay records along with their reasons would be highly
+valuable. <br><br>
+The airline industry which is ever-active and dynamic, requires continuous
+monitoring of delays and update of models with more information with time.
+By investing in data-driven strategies, airlines can navigate the complexities of modern air
+travel effectively and deliver a smooth and reliable experience for passengers.
+						</p>	
+					</div>
+				</section>
+
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+
+		</body>
+					
+</html>

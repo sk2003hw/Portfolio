@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNTBXYWL3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNTBXYWL3H');
+</script>
+		<title>Shreya's Portfolio: Statistical Analysis and Modeling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#portfolio" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/sk2003hw/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kalashreya/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:shreya11kala@gmail.com" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+							<li><a href="mailto:shreyakala@ymail.com" class="icon brands fa-yahoo"><span class="label">Yahoo mail</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="top" class="stat cover">
+					<div class="container">
+						<br><br>
+						<header>
+						</header>
+						
+					</div>
+				</section>
+
+				<section id="about" class="three">
+					<div class="container">
+						<strong>Language:</strong> R <br> <strong> Code and Report </strong> at
+						<a href="https://github.com/sk2003hw/Statistical-Analysis-in-R" class="icon brands fa-github"><span class="label">Github</span></a>
+					</div>	
+				</section>
+
+				<section id="about" class="two">
+					<div class="container">
+						<p style="text-align: left; font-size: 18px;">
+							This project is a statistical analysis of the sizes of files sent through an internet network.
+							The distribution of the data given by x, is modelled by a Pareto statistical model and the
+							maximum likelihood estimator along with its distribution is estimated. Thousand files of
+							varying sizes(in kB) are selected. The probability density function for the Pareto model is
+							given by-
+						</p>
+						<figure>
+							<img src="images/pareto.png" alt="Pareto distribution" width="" height=""/>
+							<figcaption style="font-size: 18px;">where x is a data sample, α is an unknown parameter greater than 0 (α > 0), <br>and 1000 is
+								the minimum possible value of xm (xm ≥ 1000).</figcaption>
+						</figure>
+						<br>
+						<p style="text-align: left; font-size: 18px;">
+							Towards the end, the likely sizes of 1000 files that would flow through the network in the
+							following month and following the Pareto distribution with the derived ˆα- the estimator and
+							xm have been simulated to estimate their distribution. 
+						</p>
+						<figure>
+							<img src="images/stat-1.png" alt="Pareto distribution values" width="50%" height="50%"/>
+							<figcaption style="font-size: 18px;">Summary Statistics and Histogram of File Sizes</figcaption>
+						</figure>
+						<br>
+						<p style="text-align: left; font-size: 18px;">
+							Code was written in R to tabulate summary statistics shown in the table such as the
+							minimum value, 1st quartile, median, 3rd quartile and maximum value. The mean or
+							average of the data was calculated along with the standard deviation. Inter Quartile Range
+							(IQR) has been computed as well.<br><br>
+							The mean the data can be observed to be higher than the median indicating that most
+							values are towards the lower end with the longer tail being towards the right. Thus, it is
+							said to be positively skewed and this is inferred from the histogram as well. The standard
+							deviation is quite high which indicates that many data points are far from the mean.<br><br>
+							Apart from illustrating the skewness of the data, the histogram proves and
+							reinforces the fact that data with Pareto distribution is skewed and has a heavy/long tail. Most data is seen on the far left indicating that most values are on the lower end. The
+							one data point- 77538.426 is not displayed on this histogram with 50 bins as the frequency
+							of samples around that value is just 1.<br><br>
+							Value given by n% quartile indicate that n% of data have values less than the given value.
+							The quantiles are in the order as follows- minimum value, lower or first quartile, median
+							value, upper or third quartile, and maximum value. Only a quarter of the sizes are less than
+							1098.374 Kb and another quarter of the data exceeds 1637.462 Kb. IQR measures the
+							spread of the mid-ranged data and the range for the middle 50% of data is 539.081 Kb.<br><br>
+						</p>
+					</div>
+				</section>
+			</div>
+
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+
+		</body>
+					
+</html>
